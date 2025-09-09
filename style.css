@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: #161414;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+nav {
+    display: flex;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+nav ul li a {
+    color: wheat;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: cyan;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.hero span {
+    color: wheat;
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.hero button {
+    padding: 10px 20px;
+    border: none;
+    background: rgb(117, 175, 175);
+    color: black;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+    border-radius: 10px;
+}
+
+.hero button:hover {
+    transform: scale(1.1);
+}
+
+section {
+    padding: 100px 50px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    border: 1px solid wheat;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgb(245, 222, 179);
+}
+
+.about-me{
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+section h2 {
+    color: rgb(161, 160, 160);
+}
+
+section ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:hover{
+    color: cyan;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #2a2828;
+}
