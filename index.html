@@ -55,6 +55,26 @@
         color: cyan;
     }
 
+    .image-dp {
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+    
+    .image-dp img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: 45%;
+        transition: transform 0.3s;        
+    }
+
+    .image-dp img:hover{
+        transform: scale(1.5);
+    }
+
     .hero {
         height: 100vh;
         display: flex;
@@ -161,6 +181,9 @@
     </header>
 
     <section id="home" class="hero">
+        <div class="image-dp">
+            <img src="./assets/dp.jpg"/>
+        </div>
         <h2>Hello, I'm <span>Delwin Prakash</span></h2>
         <p>Web Developer | App Developer | Blockchain Developer</p>
         <button onclick="scrollToSection('projects')">View Projects</button>
